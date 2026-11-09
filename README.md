@@ -5,7 +5,7 @@ classical machine-learning models, served through an interactive Streamlit
 web application.
 
 - **GitHub repository:** <https://github.com/parthongithub/ml-assignment2-steel-fault-lens>
-- **Live Streamlit app:** _to be added after deployment_
+- **Live Streamlit app:** <https://2026aj05442-ml-assignment2.streamlit.app>
 
 ---
 
