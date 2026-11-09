@@ -1,0 +1,116 @@
+{
+  "dataset": "UCI Steel Plates Faults (id 198)",
+  "target_column": "fault_type",
+  "feature_columns": [
+    "X_Minimum",
+    "X_Maximum",
+    "Y_Minimum",
+    "Y_Maximum",
+    "Pixels_Areas",
+    "X_Perimeter",
+    "Y_Perimeter",
+    "Sum_of_Luminosity",
+    "Minimum_of_Luminosity",
+    "Maximum_of_Luminosity",
+    "Length_of_Conveyer",
+    "TypeOfSteel_A300",
+    "TypeOfSteel_A400",
+    "Steel_Plate_Thickness",
+    "Edges_Index",
+    "Empty_Index",
+    "Square_Index",
+    "Outside_X_Index",
+    "Edges_X_Index",
+    "Edges_Y_Index",
+    "Outside_Global_Index",
+    "LogOfAreas",
+    "Log_X_Index",
+    "Log_Y_Index",
+    "Orientation_Index",
+    "Luminosity_Index",
+    "SigmoidOfAreas"
+  ],
+  "fault_classes": [
+    "Bumps",
+    "Dirtiness",
+    "K_Scatch",
+    "Other_Faults",
+    "Pastry",
+    "Stains",
+    "Z_Scratch"
+  ],
+  "seed": 2026,
+  "holdout_fraction": 0.2,
+  "train_rows": 1552,
+  "holdout_rows": 389,
+  "model_files": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "K-Nearest Neighbors": "knn.joblib",
+    "Gaussian Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "svm.joblib"
+  },
+  "best_params": {
+    "Logistic Regression": {
+      "C": 50.0
+    },
+    "Decision Tree": {
+      "criterion": "entropy",
+      "max_depth": 12,
+      "min_samples_leaf": 3
+    },
+    "K-Nearest Neighbors": {
+      "n_neighbors": 7,
+      "weights": "distance"
+    },
+    "Gaussian Naive Bayes": {
+      "var_smoothing": 0.01
+    },
+    "Support Vector Machine": {
+      "C": 30.0,
+      "gamma": 0.01
+    }
+  },
+  "holdout_metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.6992,
+      "AUC": 0.934,
+      "Precision": 0.7193,
+      "Recall": 0.719,
+      "F1": 0.7156,
+      "MCC": 0.6124
+    },
+    "Decision Tree": {
+      "Accuracy": 0.7404,
+      "AUC": 0.894,
+      "Precision": 0.7682,
+      "Recall": 0.7777,
+      "F1": 0.7719,
+      "MCC": 0.6673
+    },
+    "K-Nearest Neighbors": {
+      "Accuracy": 0.7378,
+      "AUC": 0.9376,
+      "Precision": 0.7894,
+      "Recall": 0.7866,
+      "F1": 0.7858,
+      "MCC": 0.6645
+    },
+    "Gaussian Naive Bayes": {
+      "Accuracy": 0.6144,
+      "AUC": 0.9251,
+      "Precision": 0.6244,
+      "Recall": 0.7362,
+      "F1": 0.6496,
+      "MCC": 0.5452
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.7481,
+      "AUC": 0.9366,
+      "Precision": 0.806,
+      "Recall": 0.7864,
+      "F1": 0.7956,
+      "MCC": 0.675
+    }
+  }
+}
