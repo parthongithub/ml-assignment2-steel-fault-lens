@@ -4,8 +4,8 @@ Multi-class classification of surface faults on steel plates using five
 classical machine-learning models, served through an interactive Streamlit
 web application.
 
-- **GitHub repository:** __REPO_URL__
-- **Live Streamlit app:** __APP_URL__
+- **GitHub repository:** <https://github.com/parthongithub/ml-assignment2-steel-fault-lens>
+- **Live Streamlit app:** _to be added after deployment_
 
 ---
 
