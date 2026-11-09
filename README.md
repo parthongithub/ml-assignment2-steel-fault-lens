@@ -138,6 +138,7 @@ a clear error message.
 steel-fault-lens/
 ├── app.py                      # Streamlit web application
 ├── train_models.py             # training + evaluation script (source code)
+├── ML_Assignment2_Steel_Fault_Lens.ipynb  # same pipeline as a notebook, with EDA + plots
 ├── requirements.txt            # pinned dependencies for Streamlit Cloud
 ├── test_data.csv               # 20 % hold-out split (389 rows, with labels)
 ├── README.md
@@ -161,6 +162,7 @@ steel-fault-lens/
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python train_models.py        # optional: re-creates model/ and test_data.csv
+# or open ML_Assignment2_Steel_Fault_Lens.ipynb in Jupyter -> Restart & Run All
 streamlit run app.py
 ```
 
